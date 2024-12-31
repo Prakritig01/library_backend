@@ -5,6 +5,9 @@ const library = require('./routes/library.routes')
 
 const express = require("express");
 const app = express();
+
+require('./connections/connectMon');
+
 app.use(express.json());
 app.use(logger);
 
